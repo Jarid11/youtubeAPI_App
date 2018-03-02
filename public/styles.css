@@ -1,0 +1,56 @@
+body {
+  background-color: #b5afaf;
+}
+
+header, footer {
+  text-align: center;
+}
+
+footer {
+  height: 10vh;
+  margin: auto;
+}
+
+strong {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+ul {
+  width: 50%;
+  margin: auto;
+  padding: 0;
+}
+li {
+  margin: auto;
+  list-style: none;
+}
+#buttonContainer {
+  margin: 10px auto;
+  padding: 20px
+}
+.animate {
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button {
+	padding: 10px 40px;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 15px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.blue {
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+.red {
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}

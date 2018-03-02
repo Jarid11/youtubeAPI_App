@@ -1,0 +1,12 @@
+<div id="buttonContainer">
+<% if(data.prevPageToken) { %>
+    <a href="/results/page?id=<%= data.prevPageToken %>&query=<%= query %>" class="action-button shadow animate blue">Previous Page</a>
+<% } %>
+
+<% if(data.nextPageToken) { %>
+    <a href="/results/page?id=<%= data.nextPageToken %>&query=<%= query %>" class="action-button shadow animate blue">Next Page</a>
+<% } %>
+
+  <a href="/" class="action-button shadow animate red">Search Again!</a>
+</div>
+<p>© Copyright 2018 WebDevisLife Co.</p>

@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <%- include('partials/head'); %>
+</head>
+<body>
+
+<header>
+    <%- include('partials/header'); %>
+</header>
+
+<main id="videoContainer">
+    <div>
+      <ul>
+       <% data.items.forEach(function(video) { %>
+            <strong>
+              <%= video.snippet.title %>
+            </strong>
+            <li>
+              <iframe id="ytplayer" type="text/html" width="640" height="360" margin="auto" frameborder="0"
+                src="https://www.youtube.com/embed/<%= video.id.videoId %>" target="_blank">
+              </iframe>
+            </li>
+       <% }) %>
+      </ul>
+    </div>
+</main>
+
+<footer>
+    <%- include('partials/footer'); %>
+</footer>
+
+</body>
+</html>
